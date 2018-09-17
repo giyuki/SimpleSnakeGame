@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Myview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.a86275.snakegamebyycc.GameDisplay
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gameDisplayView"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.a86275.snakegamebyycc.GameButton
+            android:id="@+id/gameButton1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            Myview:GameButtonText="down"
+            android:layout_margin="0dp" /><!--边缘大小--><!--最下面的-->
+        <com.example.a86275.snakegamebyycc.GameButton
+            android:id="@+id/gameButton2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/gameButton1"
+            Myview:GameButtonText="Restart"
+            android:layout_centerHorizontal="true" /><!--中间的-->
+        <com.example.a86275.snakegamebyycc.GameButton
+            android:id="@+id/gameButton3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/gameButton2"
+            Myview:GameButtonText="up"
+            android:layout_centerHorizontal="true" /><!--上面的-->
+        <com.example.a86275.snakegamebyycc.GameButton
+            android:id="@+id/gameButton4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/gameButton2"
+            Myview:GameButtonText="left"
+            android:layout_toLeftOf="@+id/gameButton2" />
+        <com.example.a86275.snakegamebyycc.GameButton
+            android:id="@+id/gameButton5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/gameButton2"
+            Myview:GameButtonText="right"
+            android:layout_toRightOf="@+id/gameButton2" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
